@@ -50,6 +50,12 @@ python run.py --openai_key [your openai_key] --model_path gpt-3.5-turbo --target
 set `directory_path` as the directory of result, then `run eval.py` to get the ASR and AQ.
 
 
+## Citations
+```
+Li, M. (2025) PAPILLON: Efficient and Stealthy Fuzz Testing-Powered Jailbreaks for LLMs. Zenodo. doi:10.5281/zenodo.14737139.
+```
+
+
 
 
 
