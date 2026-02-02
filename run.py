@@ -1,3 +1,6 @@
+
+## This file has been updated to make it compatible with the latest version of google-genai
+
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'  # for debugging
 import csv
