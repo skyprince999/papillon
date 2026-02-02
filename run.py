@@ -131,8 +131,8 @@ if __name__ == "__main__":
     parser.add_argument('--openai_key', type=str, default='', help='OpenAI API Key')
     parser.add_argument('--claude_key', type=str, default='', help='Claude API Key')
     parser.add_argument('--palm_key', type=str, default='', help='PaLM2 api key')
-    parser.add_argument('--model_path', type=str, default='gpt-3.5-turbo',
-                        help='mutate model path')
+    parser.add_argument('--model_path', type=str, default='gpt-4o-2024-08-06', 
+                        help='mutate model path') # changed this from gpt-3.5-turbo 
     parser.add_argument('--target_model', type=str, default='',
                         help='The target model, openai model or open-sourced LLMs')
     parser.add_argument('--max_query', type=int, default=100,
