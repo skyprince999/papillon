@@ -6,7 +6,10 @@ import time
 import concurrent.futures
 from vllm import LLM as vllm
 from vllm import SamplingParams
-import google.generativeai as palm
+
+# import google.generativeai as palm
+from google import genai
+
 from anthropic import Anthropic, HUMAN_PROMPT, AI_PROMPT
 
 
@@ -203,7 +206,7 @@ class BardLLM(LLM):
     def generate(self, prompt):
         return
 
-class PaLM2LLM(LLM):
+class 2LLM(LLM):
     def __init__(self,
                  model_path='chat-bison-001',
                  api_key=None,
