@@ -70,7 +70,8 @@ class GPT(LanguageModel):
     API_QUERY_SLEEP = 0.5
     API_MAX_RETRY = 20
     API_TIMEOUT = 30
-    
+
+    #Why is the API key shared here! and it was not flagged by github !!!
     client = OpenAI(base_url="https://api.chatanywhere.com.cn/v1",api_key="sk-GfKG7AqtH4MwLodZxPIVAroZAvGX922M3b1OLM8c4bAeuV1n")
 
 
@@ -173,7 +174,7 @@ class GPTEvaluator(EvaluatorBase):
                  ):
         super(GPTEvaluator, self).__init__(max_n_tokens,
                  temperature,
-                 'gpt-4',
+                 'gpt-4o-2024-08-06',
                  goal,
                  target_str)
         self.evaluator_model = GPT(model_name = self.evaluator_name)
